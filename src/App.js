@@ -8,7 +8,7 @@ function App() {
 			Sage Garrett
 		</header>
 		<body>
-			See below for details
+			See above for details
 		</body>
 		<footer>
 			Created using React.js
