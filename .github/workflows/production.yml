@@ -1,5 +1,5 @@
 name: Main Auto-Deploy CI/CD
-run-name: ${{ gitub.actor }} deployment
+run-name: ${{ github.actor }} deployment
 on:
   push:
     branches:
