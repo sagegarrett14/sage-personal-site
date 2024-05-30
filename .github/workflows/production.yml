@@ -8,8 +8,10 @@ jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-latest
     steps:
-      - run: git config --global user.email "sage.garrett14@gmail.com"
-      - run: git config --global user.name "Sage Garrett"
+      - run: |
+          git config --global user.email "sage.garrett14@gmail.com"
+          git config --global user.name "Sage Garrett"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sagegarrett14/sg-homepage
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
