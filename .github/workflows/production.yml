@@ -12,7 +12,7 @@ jobs:
           git config --global user.email "sage.garrett14@gmail.com"
           git config --global user.name "Sage Garrett"
       - uses: actions/checkout@v4
-      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sagegarrett14/sg-homepage
+      - run: git remote set-url origin https://sagegarrett14:${{ secrets.GITHUB_TOKEN }}@github.com/sagegarrett14/sg-homepage
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
